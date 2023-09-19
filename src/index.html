@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Audio player</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Music player</h1>
+
+      <div class="music-container">
+        <div class="music-info">
+          <h4 class="title">Elliot</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <audio src="./audio/bassbuzzer.mp3" id="audio"></audio>
+
+        <div class="img-cover">
+          <img src="./images/elliot-X2.jpg" alt="music-cover" class="cover" />
+        </div>
+
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
+
+        <div class="volume-container">
+          <div class="volume-cover">
+            <button id="volume-button" class="volume">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <div class="range-container close">
+              <input id="volume" name="volume" type="range" min="0" max="100" value="100" />
+            </div>
+          </div>
+          <div class="volume-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
