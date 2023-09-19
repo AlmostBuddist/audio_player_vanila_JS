@@ -1,6 +1,10 @@
 ## Start
 
 ```bash
+    yarn
+```
+
+```bash
     yarn start
 ```
 
